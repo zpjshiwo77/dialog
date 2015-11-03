@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>异步加载脚本</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div onclick="x01()">alert</div>
+<div onclick="x02()">confirms</div>
+<script type="text/javascript">
+function x01(){
+    alert("我是alert!");
+}
+function x02(){
+    var onclose = function (blo) {
+        if (blo) {return true};
+        return false;
+    }
+    confirm("我是confirm!",onclose);
+}
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js" type="text/javascript" defer async="true" data-main="js/test" charset="utf-8"></script>
+</body>
+</html>
