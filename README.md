@@ -1,0 +1,2 @@
+# dialog
+a simple dialog
