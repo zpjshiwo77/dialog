@@ -12,21 +12,21 @@
 	display: block;
     position: fixed;
     top: 50%;
-    margin-top: -138.5px;
+    margin-top: -155.5px;
     left: 50%;
     margin-left: -318.5px;
     z-index: 10001;
-    border: 4px solid rgba(0,0,0,0.6);
+    border: 5px solid rgba(0,0,0,0.2);
     background-color: #fff;
 }
 .dialog-ybBoxTitleStyle-dialog-dft{
     font-family: 'microsoft yahei';
     color: #000;
-    font-size: 24px;
-    line-height: 50px;
-    height: 52px;
+    font-size: 28px;
+    line-height: 55px;
+    height: 60px;
     background-color: #fff;
-    padding:0px;
+    padding-top:5px;
     text-align: center;
     margin: 0px;
 }
@@ -93,53 +93,54 @@
 }
 .dialog-BoxBtnStyle-dialog-dft{
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+    margin-top: 20px;
     width: 100%;
 }
 .dialog-BtnStyle-y-dialog-dft{
-	cursor:pointer;
-	background-color: #fe8333;
-    font-size: 18px;
+    cursor: pointer;
+    background-color: #fe8333;
+    font-size: 16px;
     font-family: "microsoft yahei";
     color: #fff;
-    padding: 8px 50px;
+    padding: 9.5px 0px;
     border-radius: 2px;
     margin: 0 26px;
     letter-spacing: normal;
     text-decoration: none;
     text-align: center;
+    width: 135px;
+    display: inline-block;
 }
 .dialog-BtnStyle-n-dialog-dft{
     cursor:pointer;
-    background-color: #8e9eac;
-    font-size: 18px;
+    background-color: #c3c3c3;
+    font-size: 16px;
     font-family: "microsoft yahei";
     color: #fff;
-    padding: 8px 50px;
+    padding: 9.5px 0px;
     border-radius: 2px;
     margin: 0 26px;
     letter-spacing: normal;
     text-decoration: none;
     text-align: center;
+    width: 135px;
+    display: inline-block;
 }
 .dialog-BtnStyle-y-dialog-dft:hover{
-	background-color: #fe6000;
-}
-.dialog-BtnStyle-n-dialog-dft:hover{
-    background-color: #7c93a8;
+	background-color: #e4762e;
 }
 .dialog-BodyStyle-dialog-dft{
     width: 100%;
 }
 .dialog-LabelStyle-dialog-dft{
     display: block;
-    color: rgb(77, 93, 107);
+    color: #212121;
     font-family: 'microsoft yahei', simsun, arial, tahoma, sans-serif;
     font-size: 18px;
     font-stretch: normal;
     font-style: normal;
     font-variant: normal;
-    font-weight: bold;
     margin-bottom: 5px;
 }
 .dialog-InputStyle-dialog-dft{
@@ -176,7 +177,7 @@
     border-top-width: 1px;
     box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px 0px inset;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: #aaaaaa;
     cursor: auto;
     font-family: Gorgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -210,6 +211,7 @@
 .dialog-InputStyle-dialog-dft:focus{
     background-color: rgb(251, 250, 248);
     border-color: rgb(255,168,154);
+    color: #000;
 }
 .dialog-TextBtnStyle-dialog-dft{
     cursor:pointer;
@@ -227,7 +229,7 @@
     margin-top: 7px;
 }
 .dialog-TextBtnStyle-dialog-dft:hover{
-    background-color: #fe6000;
+    background-color: #e4762e;
 }
 .dialog-TextPStyle-dialog-dft{
     color: #bbb;

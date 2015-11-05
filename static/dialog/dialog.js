@@ -143,8 +143,8 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
                     }
                     if(typeof btn.primary != "undefined"){
                         btntp[0].primary = btn.primary;
-                        if(btntp.st=="y" && btn.primary == true){$(btntp).css("background-color","#fe6000");}
-                        else if(btntp.st=="n" && btn.primary == true){$(btntp).css("background-color","#7c93a8");}
+                        if(btntp.st=="y" && btn.primary == true){$(btntp).css("background-color","#fe8333");}
+                        else if(btntp.st=="n" && btn.primary == true){$(btntp).css("background-color","#c3c3c3");}
                     }
                     if(typeof btn.default != "undefined"){
                         btntp[0].default = btn.default;
