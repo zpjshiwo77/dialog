@@ -79,7 +79,8 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
                 href: href,
                 rel: "stylesheet",
                 type: "text/css",
-                charset: "utf-8"
+                charset: "utf-8",
+                ids: this.symbol
             })[0]);
         }
         // 显示对话框
@@ -373,11 +374,25 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
             //<------------------------------------------------------------------------------------>
             $("[ids=dialog-shade"+this.symbol+"]").remove();
             $("[ids=dialog-tipBox"+this.symbol+"]").remove();
-            dialogs.pop();
             //解绑body事件
             $("body").off('keydown.Enter'+this.symbol);
             $("body").off('keydown.Esc'+this.symbol);
             $("body").off('keydown.EscX'+this.symbol);
+            //移除css
+            var that = this;
+            $("link").each(function(){
+                var reg = new RegExp(that.theme+'.css$');
+                var item = reg.test(this.href);
+                if(item && this.getAttribute("ids") == dialogs.length){
+                    var navigatorName = "Microsoft Internet Explorer"; 
+                    if(navigator.appName == navigatorName){
+                        this.removeNode(true);
+                    }else{
+                        this.remove();
+                    }
+                }
+            });
+            dialogs.pop();
             // delete this;//移除该对象
             //<------------------------------------------------------------------------------------>
             return this;
