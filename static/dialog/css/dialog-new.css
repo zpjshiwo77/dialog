@@ -9,7 +9,7 @@
     display: block;
 }
 .dialog-tipBoxStyle-dialog-new{
-    display: block;
+    display: inline-block;
     position: fixed;
     top: 50%;
     margin-top: -138.5px;

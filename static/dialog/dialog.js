@@ -217,12 +217,14 @@ myDialog.show({"title": "标题", "message": "消息", "body": [
                 this.width = options["width"];
                 $("[ids=dialog-BoxText"+this.symbol+"]").css("width",options["width"]+"px");
                 var boxWidth = 637+parseInt(options["width"])-523;
+                $("[ids=dialog-tipBox"+this.symbol+"]").css("width",boxWidth+"px");
                 $("[ids=dialog-tipBox"+this.symbol+"]").css("margin-left",-boxWidth/2+"px");
             }
             if(typeof options["height"]!="undefined"){
                 this.height = options["height"];
                 $("[ids=dialog-BoxText"+this.symbol+"]").css("height",options["height"]+"px");
                 var boxHeight = 277+parseInt(options["height"])-112;
+                 $("[ids=dialog-tipBox"+this.symbol+"]").css("height",boxHeight+"px");
                 $("[ids=dialog-tipBox"+this.symbol+"]").css("margin-top",-boxHeight/2+"px");
             }
             //设置位置
