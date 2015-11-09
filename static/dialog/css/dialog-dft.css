@@ -20,6 +20,7 @@
     z-index: 10001;
     border: 5px solid rgba(0,0,0,0.2);
     background-color: #fff;
+    background-clip:padding-box;
 }
 .dialog-ybBoxTitleStyle-dialog-dft{
     font-family: 'microsoft yahei';
